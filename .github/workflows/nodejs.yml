@@ -1,0 +1,29 @@
+name: Node.js CI
+on: [push]
+
+jobs:
+  build-on-sqlite:
+    runs-on: ubuntu-20.04
+
+    strategy:
+      matrix:
+        node-version: [12.x, 13.x, 14.x, 15.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Test
+        run: npm test

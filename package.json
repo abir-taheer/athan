@@ -4,7 +4,8 @@
   "description": "plays the athan on local cast-enabled devices",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "echo \"No build specified\""
   },
   "author": "Abir Taheer",
   "license": "MIT",
