@@ -4,7 +4,7 @@
   "description": "plays the athan on local cast-enabled devices",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "nyc --reporter=lcov --reporter=text mocha",
     "build": "echo \"No build specified\""
   },
   "author": "Abir Taheer",
@@ -24,7 +24,8 @@
   "homepage": "https://github.com/abir-taheer/athan#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mocha": "^8.3.2"
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0"
   },
   "mocha": {
     "recursive": true
