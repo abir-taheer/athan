@@ -2,7 +2,7 @@ name: Node.js CI
 on: [push]
 
 jobs:
-  build-on-sqlite:
+  build-and-test:
     runs-on: ubuntu-20.04
 
     strategy:
