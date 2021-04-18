@@ -1,0 +1,24 @@
+{
+  "name": "athan",
+  "version": "1.0.0",
+  "description": "plays the athan on local cast-enabled devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abir Taheer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abir-taheer/athan.git"
+  },
+  "keywords": [
+    "athan",
+    "cast",
+    "google"
+  ],
+  "bugs": {
+    "url": "https://github.com/abir-taheer/athan/issues"
+  },
+  "homepage": "https://github.com/abir-taheer/athan#readme"
+}
