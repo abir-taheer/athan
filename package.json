@@ -23,11 +23,13 @@
   },
   "homepage": "https://github.com/abir-taheer/athan#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "mocha": "^8.3.2",
-    "nyc": "^15.1.0"
+    "express": "^4.17.1"
   },
   "mocha": {
     "recursive": true
+  },
+  "devDependencies": {
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0"
   }
 }
