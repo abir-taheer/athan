@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc --reporter=lcov --reporter=text mocha",
-    "build": "echo \"No build specified\"",
+    "build": "npx sequelize db:migrate",
     "prettier": "npx prettier --write ."
   },
   "author": "Abir Taheer",
@@ -25,7 +25,11 @@
   "homepage": "https://github.com/abir-taheer/athan#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "prettier": "^2.2.1"
+    "internal-ip": "^6.2.0",
+    "prettier": "^2.2.1",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "^5.0.2"
   },
   "mocha": {
     "recursive": true
