@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc --reporter=lcov --reporter=text mocha",
-    "build": "echo \"No build specified\""
+    "build": "echo \"No build specified\"",
+    "prettier": "npx prettier --write ."
   },
   "author": "Abir Taheer",
   "license": "MIT",
@@ -23,7 +24,8 @@
   },
   "homepage": "https://github.com/abir-taheer/athan#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "prettier": "^2.2.1"
   },
   "mocha": {
     "recursive": true
